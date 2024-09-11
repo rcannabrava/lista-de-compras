@@ -58,22 +58,22 @@ p {
     text-align: left;
 }
 
-#input-item {
+.input-item {
     border-radius: 1.5rem;
     display: block;
     padding: .7rem;
     width: 307px;
-    text-align: center;
     border: 1px solid var(--preto);
+    font-family: var(--fonte-texto);
 }
 
-#input-item::placeholder {
+.input-item::placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     line-height: 1.1rem;
 }
 
-#adicionar-botao {
+.button-item {
     text-align: center;
     border-radius: 1.5rem;
     margin-top: .5rem;
@@ -91,27 +91,26 @@ form {
     align-items: center;
 }
 
-.item-lista-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-nome-compra {
-    display: flex;
-}
-
 ul {
     list-style-type: none;
     width: 100%;
 }
 
-.item-lista-texto {
+.lista-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-item-container div {
+    display: flex;
+}
+
+.texto-data {
     font-size: .8rem;
     line-height: 1.3rem;
 }
 
-.checkbox-input {
+.input-checkbox {
     display: none;
 }
 
@@ -142,7 +141,12 @@ ul {
     transform: rotate(-140deg);
 }
 
-.botao-acao {
+.item-lista-button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+
+.container-lista {
+    width: 100%;
 }
